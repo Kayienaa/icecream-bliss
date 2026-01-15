@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceCream Bliss - Fresh & Creamy Ice Cream</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Galaxy Sparkle Background */
+      .galaxy-bg {
+        background: linear-gradient(
+          135deg,
+          #14b8a6 0%,
+          #8b5cf6 50%,
+          #3b82f6 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+
+      .sparkle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: white;
+        border-radius: 50%;
+        animation: sparkle-animation 3s infinite;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      }
+
+      @keyframes sparkle-animation {
+        0%,
+        100% {
+          opacity: 0;
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .sparkle:nth-child(1) {
+        top: 20%;
+        left: 10%;
+        animation-delay: 0s;
+      }
+      .sparkle:nth-child(2) {
+        top: 40%;
+        left: 30%;
+        animation-delay: 0.5s;
+      }
+      .sparkle:nth-child(3) {
+        top: 60%;
+        left: 50%;
+        animation-delay: 1s;
+      }
+      .sparkle:nth-child(4) {
+        top: 80%;
+        left: 70%;
+        animation-delay: 1.5s;
+      }
+      .sparkle:nth-child(5) {
+        top: 30%;
+        left: 80%;
+        animation-delay: 2s;
+      }
+      .sparkle:nth-child(6) {
+        top: 70%;
+        left: 20%;
+        animation-delay: 2.5s;
+      }
+      .sparkle:nth-child(7) {
+        top: 50%;
+        left: 90%;
+        animation-delay: 0.8s;
+      }
+      .sparkle:nth-child(8) {
+        top: 10%;
+        left: 60%;
+        animation-delay: 1.8s;
+      }
+      .sparkle:nth-child(9) {
+        top: 90%;
+        left: 40%;
+        animation-delay: 1.2s;
+      }
+      .sparkle:nth-child(10) {
+        top: 25%;
+        left: 45%;
+        animation-delay: 2.2s;
+      }
+
+      /* Peach Polkadot Background */
+      .peach-polkadot {
+        background-color: #ffdab9;
+        background-image: radial-gradient(circle, #14b8a6 10%, transparent 10%),
+          radial-gradient(circle, #14b8a6 10%, transparent 10%);
+        background-size: 50px 50px;
+        background-position: 0 0, 25px 25px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="text-3xl font-bold text-teal-500">
+            <i class="fas fa-ice-cream mr-2"></i>IceCream Bliss
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#home"
+              class="text-gray-700 hover:text-teal-500 transition duration-300"
+              >Home</a
+            >
+            <a
+              href="#menu"
+              class="text-gray-700 hover:text-teal-500 transition duration-300"
+              >Menu</a
+            >
+            <a
+              href="#promo"
+              class="text-gray-700 hover:text-teal-500 transition duration-300"
+              >Promo</a
+            >
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-teal-500 transition duration-300"
+              >About</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-teal-500 transition duration-300"
+              >Contact</a
+            >
+            <button
+              class="bg-teal-500 text-white px-6 py-2 rounded-full hover:bg-teal-600 transition duration-300 shadow-lg"
+            >
+              Order Now
+            </button>
+          </div>
+          <div class="md:hidden">
+            <button class="text-gray-700 text-2xl">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="bg-gradient-to-br from-teal-100 via-cyan-50 to-purple-100 py-20"
+    >
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1
+              class="text-5xl md:text-6xl font-bold text-white mb-4 galaxy-bg px-8 py-6 rounded-3xl inline-block relative"
+            >
+              <span class="sparkle"></span>
+              <span class="sparkle"></span>
+              <span class="sparkle"></span>
+              <span class="sparkle"></span>
+              <span class="sparkle"></span>
+              <span class="sparkle"></span>
+              <span class="sparkle"></span>
+              <span class="sparkle"></span>
+              <span class="sparkle"></span>
+              <span class="sparkle"></span>
+              <span class="relative z-10"
+                >Fresh & Creamy
+                <span class="text-yellow-300">Ice Cream</span> Everyday</span
+              >
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+              Nikmati kelezatan es krim premium dengan berbagai rasa pilihan.
+              Dibuat dari bahan alami berkualitas tinggi untuk momen spesial
+              Anda.
+            </p>
+            <div class="flex space-x-4">
+              <button
+                class="bg-teal-500 text-white px-8 py-3 rounded-full hover:bg-teal-600 transition duration-300 shadow-lg text-lg"
+              >
+                Pesan Sekarang
+              </button>
+              <button
+                class="bg-white text-teal-500 px-8 py-3 rounded-full hover:bg-gray-100 transition duration-300 shadow-lg text-lg border-2 border-teal-500"
+              >
+                Lihat Menu
+              </button>
+            </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <div
+              class="bg-gradient-to-br from-pink-200 to-teal-200 rounded-full w-96 h-96 flex items-center justify-center shadow-2xl"
+            >
+              <i class="fas fa-ice-cream text-9xl text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 peach-polkadot">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">
+            Menu Favorit Kami
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Pilih dari berbagai rasa es krim yang menggugah selera
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Menu Item 1 -->
+          <div
+            class="bg-gradient-to-br from-pink-50 to-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden transform hover:-translate-y-2"
+          >
+            <div class="bg-pink-200 h-48 flex items-center justify-center">
+              <i class="fas fa-ice-cream text-7xl text-pink-400"></i>
+            </div>
+            <div class="p-6 bg-white">
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Strawberry Delight
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Es krim strawberry segar dengan potongan buah asli yang manis
+                dan menyegarkan
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-3xl font-bold text-teal-500">Rp 25.000</span>
+                <button
+                  class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300"
+                >
+                  <i class="fas fa-shopping-cart mr-2"></i>Pesan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu Item 2 -->
+          <div
+            class="bg-gradient-to-br from-yellow-50 to-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden transform hover:-translate-y-2"
+          >
+            <div class="bg-yellow-200 h-48 flex items-center justify-center">
+              <i class="fas fa-ice-cream text-7xl text-yellow-400"></i>
+            </div>
+            <div class="p-6 bg-white">
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Vanilla Classic
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Es krim vanilla klasik dengan rasa creamy yang lembut dan tidak
+                pernah mengecewakan
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-3xl font-bold text-teal-500">Rp 22.000</span>
+                <button
+                  class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300"
+                >
+                  <i class="fas fa-shopping-cart mr-2"></i>Pesan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu Item 3 -->
+          <div
+            class="bg-gradient-to-br from-teal-50 to-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden transform hover:-translate-y-2"
+          >
+            <div class="bg-teal-200 h-48 flex items-center justify-center">
+              <i class="fas fa-ice-cream text-7xl text-teal-400"></i>
+            </div>
+            <div class="p-6 bg-white">
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Mint Chocolate Chip
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Perpaduan sempurna mint segar dengan chocolate chip yang renyah
+                dan lezat
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-3xl font-bold text-teal-500">Rp 28.000</span>
+                <button
+                  class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300"
+                >
+                  <i class="fas fa-shopping-cart mr-2"></i>Pesan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu Item 4 -->
+          <div
+            class="bg-gradient-to-br from-purple-50 to-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden transform hover:-translate-y-2"
+          >
+            <div class="bg-purple-200 h-48 flex items-center justify-center">
+              <i class="fas fa-ice-cream text-7xl text-purple-400"></i>
+            </div>
+            <div class="p-6 bg-white">
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Blueberry Blast
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Es krim blueberry dengan sensasi rasa buah berry yang kaya dan
+                menyegarkan
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-3xl font-bold text-teal-500">Rp 26.000</span>
+                <button
+                  class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300"
+                >
+                  <i class="fas fa-shopping-cart mr-2"></i>Pesan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu Item 5 -->
+          <div
+            class="bg-gradient-to-br from-orange-50 to-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden transform hover:-translate-y-2"
+          >
+            <div class="bg-orange-200 h-48 flex items-center justify-center">
+              <i class="fas fa-ice-cream text-7xl text-orange-400"></i>
+            </div>
+            <div class="p-6 bg-white">
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Mango Paradise
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Es krim mangga tropical yang manis dengan rasa buah mangga asli
+                yang melimpah
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-3xl font-bold text-teal-500">Rp 27.000</span>
+                <button
+                  class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300"
+                >
+                  <i class="fas fa-shopping-cart mr-2"></i>Pesan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu Item 6 -->
+          <div
+            class="bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden transform hover:-translate-y-2"
+          >
+            <div class="bg-gray-300 h-48 flex items-center justify-center">
+              <i class="fas fa-ice-cream text-7xl text-gray-500"></i>
+            </div>
+            <div class="p-6 bg-white">
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Cookies & Cream
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Es krim vanilla dengan potongan cookies Oreo yang renyah dan
+                sangat lezat
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-3xl font-bold text-teal-500">Rp 29.000</span>
+                <button
+                  class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300"
+                >
+                  <i class="fas fa-shopping-cart mr-2"></i>Pesan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Section -->
+    <section
+      id="promo"
+      class="py-20 bg-gradient-to-r from-teal-500 to-teal-600"
+    >
+      <div class="container mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between bg-white rounded-3xl shadow-2xl overflow-hidden"
+        >
+          <div class="md:w-1/2 p-12">
+            <div
+              class="inline-block bg-pink-500 text-white px-4 py-2 rounded-full mb-4 font-bold"
+            >
+              PROMO SPESIAL!
+            </div>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">
+              Beli 2 Gratis 1
+            </h2>
+            <p class="text-gray-600 text-lg mb-6">
+              Dapatkan promo spesial beli 2 es krim gratis 1 untuk semua varian
+              rasa. Promo terbatas hanya sampai akhir bulan ini!
+            </p>
+            <button
+              class="bg-teal-500 text-white px-8 py-3 rounded-full hover:bg-teal-600 transition duration-300 shadow-lg text-lg"
+            >
+              Klaim Promo
+            </button>
+          </div>
+          <div
+            class="md:w-1/2 bg-gradient-to-br from-teal-100 to-pink-100 h-80 flex items-center justify-center"
+          >
+            <i class="fas fa-gifts text-9xl text-teal-500"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-pink-100 rounded-3xl p-8 text-center shadow-lg">
+                <i class="fas fa-leaf text-5xl text-teal-500 mb-4"></i>
+                <h4 class="font-bold text-gray-800">100% Natural</h4>
+              </div>
+              <div class="bg-teal-100 rounded-3xl p-8 text-center shadow-lg">
+                <i class="fas fa-heart text-5xl text-pink-500 mb-4"></i>
+                <h4 class="font-bold text-gray-800">Made with Love</h4>
+              </div>
+              <div class="bg-yellow-100 rounded-3xl p-8 text-center shadow-lg">
+                <i class="fas fa-star text-5xl text-yellow-500 mb-4"></i>
+                <h4 class="font-bold text-gray-800">Premium Quality</h4>
+              </div>
+              <div class="bg-purple-100 rounded-3xl p-8 text-center shadow-lg">
+                <i class="fas fa-truck text-5xl text-purple-500 mb-4"></i>
+                <h4 class="font-bold text-gray-800">Fast Delivery</h4>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2 md:pl-12">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">
+              Tentang IceCream Bliss
+            </h2>
+            <p class="text-gray-600 text-lg mb-4">
+              IceCream Bliss adalah toko es krim premium yang berkomitmen untuk
+              menghadirkan es krim berkualitas tinggi dengan rasa yang autentik
+              dan menyegarkan.
+            </p>
+            <p class="text-gray-600 text-lg mb-4">
+              Sejak didirikan pada tahun 2020, kami telah melayani ribuan
+              pelanggan dengan berbagai pilihan rasa es krim yang dibuat dari
+              bahan-bahan alami pilihan. Setiap scoop es krim kami dibuat dengan
+              penuh cinta dan perhatian terhadap detail.
+            </p>
+            <p class="text-gray-600 text-lg">
+              Kami percaya bahwa es krim bukan hanya sekedar makanan penutup,
+              tetapi juga pengalaman yang membawa kebahagiaan dalam setiap
+              gigitannya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <h3 class="text-2xl font-bold mb-4 text-teal-400">
+              <i class="fas fa-ice-cream mr-2"></i>IceCream Bliss
+            </h3>
+            <p class="text-gray-400">
+              Menghadirkan kebahagiaan dalam setiap scoop es krim premium kami.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold mb-4">Kontak Kami</h4>
+            <div class="space-y-2">
+              <p class="text-gray-400">
+                <i class="fas fa-map-marker-alt mr-2 text-teal-400"></i>
+                Jl. Manis Raya No. 123, Semarang
+              </p>
+              <p class="text-gray-400">
+                <i class="fas fa-phone mr-2 text-teal-400"></i>
+                +62 812-3456-7890
+              </p>
+              <p class="text-gray-400">
+                <i class="fas fa-envelope mr-2 text-teal-400"></i>
+                hello@icecreambliss.com
+              </p>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold mb-4">Ikuti Kami</h4>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="bg-teal-500 w-10 h-10 rounded-full flex items-center justify-center hover:bg-teal-600 transition duration-300"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-teal-500 w-10 h-10 rounded-full flex items-center justify-center hover:bg-teal-600 transition duration-300"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-teal-500 w-10 h-10 rounded-full flex items-center justify-center hover:bg-teal-600 transition duration-300"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-teal-500 w-10 h-10 rounded-full flex items-center justify-center hover:bg-teal-600 transition duration-300"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2026 IceCream Bliss. All rights reserved. Made with
+            <i class="fas fa-heart text-pink-500"></i> in Semarang
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
